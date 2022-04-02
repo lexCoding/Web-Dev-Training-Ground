@@ -16,20 +16,32 @@ html {
     align-items: center;
 }
 
-.header__links {
+.logo {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.logo-text {
+    color: blue;
+    font-weight: 700;
+}
+
+.header-logo {
+    width: 5rem;
+    height: 5rem;
 }
 
 .link {
+    font-weight: 600;
     display: flex;
     justify-content: space-between;
     width: 40rem;
+    
 }
 
 
-.header__navigation {
-
-}
 
 .btn-login {
     color: white;
@@ -39,12 +51,57 @@ html {
 }
 
 .main {
-    margin: 2rem 4rem;
+    margin: 7rem 4rem;
     display: flex;
     flex-direction: row;
 }
 .container-1 {
+    padding: 0 1rem;
+    
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 50%;
+}
+
+.container-1 > h1 {
+    font-size: 4.7rem;
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+}
+.promo > h4 {
+    padding: 1rem 2rem;
+    color: white;
+    background-color: red;
+    display: inline-block;
+    border-radius: 5rem;
+}
+
+.promo > p {
+    margin-left: 1rem;
+    color: #f50a60;
+    font-weight: 700;
+}
+.img-main {
+    height: 30rem;
+    width: 40rem;
+}
+
+
+.ctn-btn {
+    margin-top: 3rem;
+}
+.btn-explore{
+    color: #ffffff;
+    background-color: #0000ff;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+}
+
+.btn-demo {
+    margin-left: 3rem;
+    font-weight: 900;
 }
