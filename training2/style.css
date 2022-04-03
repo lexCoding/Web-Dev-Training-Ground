@@ -1,0 +1,81 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem 1rem 0 1rem;
+    padding: 1rem .5rem;
+    background-color: #f2f2f2;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+#title > p {
+    font-size: 1.2rem;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    margin: 0 1rem 0 1rem;
+    padding: 1rem;
+}
+
+#img{
+    box-shadow: 2rem 3rem 4rem rgba(255,255, 255, .5);
+}
+
+#img-caption {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+
+#biography {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#life {
+    margin-top:  2rem;
+    display: list-item;
+    list-style-position:outside;
+    font-size: 1.2rem;
+    text-align: justify;
+    width: 50rem;
+    line-height: 1.5;
+}
+
+li {
+    margin-bottom: .5rem;
+}
+
+ol {
+    margin: 4rem 0 4rem 0;
+    font-style:  italic;
+    font-size: 1.5rem;
+}
+span {
+    font-weight: bold;
+}
