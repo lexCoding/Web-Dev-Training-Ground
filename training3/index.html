@@ -7,6 +7,62 @@
     <title>Survey Form</title>
 </head>
 <body>
-    
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <main class="main">
+        <form action="#" id="survey-form">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name"><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email"><br>
+
+            <label for="age">Age(optional)</label><br>
+            <input type="text" id="age" placeholder="Age"><br>
+
+            <label for="role">Which option best describes your current role?</label><br>
+            <input type="text" id="role" placeholder="Select current role"><br>
+
+            <label>Would you recommend freeCodeCamp to a friend?</label><br>
+            <input type="radio"  id="opt1" value="Definitely">
+            <label for="opt1">Definitely</label><br>
+            <input type="radio" id="opt2" value="Maybe">
+            <label for="opt2">Maybe</label><br>
+            <input type="radio" id="opt3" value="Not sure">
+            <label for="opt3">Not sure</label><br>
+
+            <label>What is your favorite feature of freeCodeCamp?</label><br>
+            <input type="text" id="role" placeholder="Select current role"><br>
+
+            <label>What would you like to see improved? (Check all that apply)</label><br>
+            <input type="checkbox" id="check1" name="check1" value="Front-end Projects">
+            <label for="check1">Front-end Projects</label><br>
+            <input type="checkbox" id="check2" name="check2" value="Back-end Projects">
+            <label for="check2">Back-end Projects</label><br>
+            <input type="checkbox" id="check3" name="check3" value="Data Visualization">
+            <label for="check3">Data Visualization</label><br>
+            <input type="checkbox" id="check4" name="check4" value="Challenges">
+            <label for="check4">Challenges</label><br>
+            <input type="checkbox" id="check5" name="check5" value="Open Source Community">
+            <label for="check5">Open Source Community</label><br>
+            <input type="checkbox" id="check6" name="check6" value="Gitter help rooms">
+            <label for="check6">Gitter help rooms</label><br>
+            <input type="checkbox" id="check7" name="check7" value="Videos">
+            <label for="check7">Videos</label><br>
+            <input type="checkbox" id="check8" name="check8" value="City Meetups">
+            <label for="check8">City Meetups</label><br>
+            <input type="checkbox" id="check9" name="check9" value="Wiki">
+            <label for="check9">Wiki</label><br>
+            <input type="checkbox" id="check10" name="check10" value="Forum">
+            <label for="check10">Forum</label><br>
+            <input type="checkbox" id="check11" name="check11" value="Additional Courses">
+            <label for="check11">Additional Courses</label><br>
+          
+            <label>Any comments or suggestions?</label><br>
+            <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Enter your comments here..."></textarea>
+            <button id="submit">Submit</button>
+        </form>
+    </main>
 </body>
 </html>
