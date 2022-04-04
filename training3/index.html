@@ -19,17 +19,17 @@
     <main class="main">
         <form action="#" id="survey-form">
             <label for="name">Name</label><br>
-            <input type="text" id="name" placeholder="Enter your name"><br>
+            <input type="text" id="name" placeholder="Enter your name" class="inputs" required><br>
 
             <label for="email">Email</label><br>
-            <input type="email" id="email" placeholder="Enter your email"><br>
+            <input type="email" id="email" placeholder="Enter your email"  class="inputs" required><br>
 
             <label for="age">Age(optional)</label><br>
-            <input type="text" id="age" placeholder="Age"><br>
+            <input type="number" id="age" placeholder="Age"  class="inputs" min="18" max="100"><br>
 
             <label for="role">Which option best describes your current role?</label><br>
             
-            <div class="dropdown">
+            <div class="dropdown role">
                 <div class="dropdown-select">
                     <span class="select">Select your role</span>
                     <svg class="dropdown-icon">
@@ -49,40 +49,64 @@
                 </div>
             </div>
 
-            <label>Would you recommend freeCodeCamp to a friend?</label><br>
-            <input type="radio"  id="opt1" value="Definitely">
-            <label for="opt1">Definitely</label><br>
-            <input type="radio" id="opt2" value="Maybe">
-            <label for="opt2">Maybe</label><br>
-            <input type="radio" id="opt3" value="Not sure">
-            <label for="opt3">Not sure</label><br>
+            <div class="radios">
+                <label>Would you recommend freeCodeCamp to a friend?</label><br>
+                <input type="radio"  id="opt1" value="Definitely">
+                <label for="opt1">Definitely</label><br>
+                <input type="radio" id="opt2" value="Maybe">
+                <label for="opt2">Maybe</label><br>
+                <input type="radio" id="opt3" value="Not sure">
+                <label for="opt3">Not sure</label><br>
+            </div>
+            
+            
 
-            <label>What is your favorite feature of freeCodeCamp?</label><br>
-            <input type="text" id="role" placeholder="Select current role"><br>
+            <label>What is your favorite feature of freeCodeCamp??</label><br>
+            <div class="dropdown feature">
+                <div class="dropdown-select">
+                    <span class="select feature-2">Select an option</span>
+                    <svg class="dropdown-icon">
+                        <use xlink:href="./sprite.svg#icon-chevron-down"></use>
+                    </svg>
+                </div>
 
-            <label>What would you like to see improved? (Check all that apply)</label><br>
-            <input type="checkbox" id="check1" name="check1" value="Front-end Projects">
-            <label for="check1">Front-end Projects</label><br>
-            <input type="checkbox" id="check2" name="check2" value="Back-end Projects">
-            <label for="check2">Back-end Projects</label><br>
-            <input type="checkbox" id="check3" name="check3" value="Data Visualization">
-            <label for="check3">Data Visualization</label><br>
-            <input type="checkbox" id="check4" name="check4" value="Challenges">
-            <label for="check4">Challenges</label><br>
-            <input type="checkbox" id="check5" name="check5" value="Open Source Community">
-            <label for="check5">Open Source Community</label><br>
-            <input type="checkbox" id="check6" name="check6" value="Gitter help rooms">
-            <label for="check6">Gitter help rooms</label><br>
-            <input type="checkbox" id="check7" name="check7" value="Videos">
-            <label for="check7">Videos</label><br>
-            <input type="checkbox" id="check8" name="check8" value="City Meetups">
-            <label for="check8">City Meetups</label><br>
-            <input type="checkbox" id="check9" name="check9" value="Wiki">
-            <label for="check9">Wiki</label><br>
-            <input type="checkbox" id="check10" name="check10" value="Forum">
-            <label for="check10">Forum</label><br>
-            <input type="checkbox" id="check11" name="check11" value="Additional Courses">
-            <label for="check11">Additional Courses</label><br>
+                <div class="dropdown-list feature-3">
+                    <ul class="dropdown-list__items">
+                        <li>Select your role</li>
+                        <li data-choice="Challenges">Challenges</li>
+                        <li data-choice="Projects">Projects</li>
+                        <li data-choice="Community">Community</li>
+                        <li data-choice="Open Source">Open Source</li>
+                
+                    </ul>
+                </div>
+            </div>
+
+            <div class="improvements">
+                <label>What would you like to see improved? (Check all that apply)</label><br>
+                <input type="checkbox" id="check1" name="check1" value="Front-end Projects">
+                <label for="check1">Front-end Projects</label><br>
+                <input type="checkbox" id="check2" name="check2" value="Back-end Projects">
+                <label for="check2">Back-end Projects</label><br>
+                <input type="checkbox" id="check3" name="check3" value="Data Visualization">
+                <label for="check3">Data Visualization</label><br>
+                <input type="checkbox" id="check4" name="check4" value="Challenges">
+                <label for="check4">Challenges</label><br>
+                <input type="checkbox" id="check5" name="check5" value="Open Source Community">
+                <label for="check5">Open Source Community</label><br>
+                <input type="checkbox" id="check6" name="check6" value="Gitter help rooms">
+                <label for="check6">Gitter help rooms</label><br>
+                <input type="checkbox" id="check7" name="check7" value="Videos">
+                <label for="check7">Videos</label><br>
+                <input type="checkbox" id="check8" name="check8" value="City Meetups">
+                <label for="check8">City Meetups</label><br>
+                <input type="checkbox" id="check9" name="check9" value="Wiki">
+                <label for="check9">Wiki</label><br>
+                <input type="checkbox" id="check10" name="check10" value="Forum">
+                <label for="check10">Forum</label><br>
+                <input type="checkbox" id="check11" name="check11" value="Additional Courses">
+                <label for="check11">Additional Courses</label><br>
+            </div>
           
             <label>Any comments or suggestions?</label><br>
             <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Enter your comments here..."></textarea>

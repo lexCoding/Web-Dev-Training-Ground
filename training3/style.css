@@ -66,10 +66,9 @@ body {
 }
 
 
-
-input {
+.inputs {
     font-size: inherit;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     width: 100%;
     padding: .5rem;
     border-radius: .5rem;
@@ -112,10 +111,11 @@ input {
     background-color: #fff;
     color: #8c8c8c;
     padding: .5rem .5rem;
+    z-index: 1;
 }
 
 .dropdown-list__items > li {    
-
+    font-size: .9rem;
 }
 .dropdown-list__items > li:hover:not(:first-child) {
     background-color:  #1a8cff;
@@ -124,4 +124,27 @@ input {
 
 .show {
     display: block;
+}
+
+.radios {
+    margin-bottom: 1.5rem;
+}
+
+.improvements {
+    margin-bottom: 2rem;
+}
+
+#comments {
+    width: 100%;
+    font-size: inherit;
+}
+
+#submit {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem 1rem;
+    color: #fff;
+    background-color: #00b300;
+    font-size: 1rem;
+    border-radius: 7px;
 }
