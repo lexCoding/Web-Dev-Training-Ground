@@ -13,7 +13,7 @@
 <body>
 
     <div class="app">
-        <h1 id="title">FreeCodeCamp Survey Form</h1>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
 
     <main class="main">
@@ -28,7 +28,26 @@
             <input type="text" id="age" placeholder="Age"><br>
 
             <label for="role">Which option best describes your current role?</label><br>
-            <input type="text" id="role" placeholder="Select current role"><br>
+            
+            <div class="dropdown">
+                <div class="dropdown-select">
+                    <span class="select">Select your role</span>
+                    <svg class="dropdown-icon">
+                        <use xlink:href="./sprite.svg#icon-chevron-down"></use>
+                    </svg>
+                </div>
+
+                <div class="dropdown-list">
+                    <ul class="dropdown-list__items">
+                        <li>Select your role</li>
+                        <li data-choice="Student">Student</li>
+                        <li data-choice="Full Time Job">Full Time Job</li>
+                        <li data-choice="Full Time Learner">Full Time Learner</li>
+                        <li data-choice="Prefer not to say">Prefer not to say</li>
+                        <li data-choice="Other">Other</li>
+                    </ul>
+                </div>
+            </div>
 
             <label>Would you recommend freeCodeCamp to a friend?</label><br>
             <input type="radio"  id="opt1" value="Definitely">
@@ -71,5 +90,7 @@
         </form>
     </main>
     </div>  
+
+    <script src="script.js"></script>
 </body>
 </html>

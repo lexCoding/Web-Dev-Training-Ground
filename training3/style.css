@@ -34,11 +34,14 @@ body {
 }
 
 #title {
+    margin-top: 3rem;
     text-align: center;
 }
 
 #description {
     text-align: center;
+    font-style: italic;
+    margin-bottom: 2rem;
 }
 
 
@@ -53,10 +56,72 @@ body {
 .main {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     /* background-color: rgba(19, 38, 57,0.9); */
     background-color: rgba(var(--color-background-1),.8);
     width: 40rem;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     border-radius: .5rem;
+    flex: 1;
+}
+
+
+
+input {
+    font-size: inherit;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.dropdown {
+    width: 30rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.dropdown-select {
+
+    display: flex;
+    justify-content: space-between;
+    font-size: inherit;
+    padding: 6px;
+    border-radius: 7px;
+    background-color: #fff;
+    /* match input field color */
+    color:  #8c8c8c; 
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 7px;
+    background-color: #fff;
+    color: #8c8c8c;
+    padding: .5rem .5rem;
+}
+
+.dropdown-list__items > li {    
+
+}
+.dropdown-list__items > li:hover:not(:first-child) {
+    background-color:  #1a8cff;
+    color: #fff;
+}
+
+.show {
+    display: block;
 }
