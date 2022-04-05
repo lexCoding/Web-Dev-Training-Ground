@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Product Landing Page</title>
 </head>
 <body>
@@ -24,24 +28,36 @@
         </form>
 
         <section id="section">
-            <div class="section__items">
+            <div class="section__container">
                 <img src="https://cdn-icons-png.flaticon.com/512/288/288336.png" alt="trombone" class="section__img">
-                <h2>Premium Materials</h2>
-                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                <div class="section__items">
+                    <h2>Premium Materials</h2>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>
             </div>
-            <div class="section__items">
+            <div class="section__container">
                 <img src="https://cdn-icons.flaticon.com/png/512/2787/premium/2787368.png?token=exp=1649111977~hmac=6f1c2dfb545b7d6c6aa674c1dd07e9a5" alt="truck" class="section__img">
-                <h2>Fast Shipping</h2>
-                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                <div class="section__items">
+                    <h2>Fast Shipping</h2>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </div>
             </div>
-            <div class="section__items">
+           <div class="section__container">
                 <img src="https://cdn-icons.flaticon.com/png/512/664/premium/664883.png?token=exp=1649112034~hmac=67430acba9b393e14e7effb670d4bb1d" alt="battery" class="section__img">
-                <h2>Quality Assurance</h2>
-                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                <div class="section__items">
+                    
+                    <h2>Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </div>
+           </div>
+            
+         </section>
+         
+         <section id="section-2">
+            <div class="video__container">
+                <video src="https://youtu.be/y8Yv4pnO7qc" width="320" height="240" id="video" controls></video>
             </div>
            
-
-            <video src="https://youtu.be/y8Yv4pnO7qc" width="320" height="240" controls></video>
 
             <div class="section__prices">
                 <div class="section__prices-items">
@@ -72,7 +88,9 @@
                     <button>SELECT</button>
                 </div>
             </div>
-        </section>
+         </section>  
+            
+        
     </main>
     <footer id="footer">
         <div class="footer__nav">
