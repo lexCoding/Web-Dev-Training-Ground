@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>freeCodeCamp: Portfolio</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="welcome-section">
+        <h1>Hey, I am Lex</h1>
+        <h3>a web developer</h3>
+    </section>
+
+    <section id="projects">
+        <h1>These are some of my projects</h1>
+
+        <div class="project__container">
+            <div class="project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project1" class="project-tile__image">
+                <a href="https://codepen.io/lexcoding/full/zYppMeN" class="project__link">Tribute Page</a>
+            </div>
+    
+            <div class="project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="project2"  class="project-tile__image">
+                <a href="#" class="project__link">Random Quote Machine</a>
+            </div>
+    
+            <div class="project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="project3"  class="project-tile__image">
+                <a href="#" class="project__link">Javascript Calculator</a>
+            </div>
+    
+            <div class="project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="project4"  class="project-tile__image">
+                <a href="#" class="project__link">Map Data Across the Globe</a>
+            </div>
+    
+            <div class="project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="project5"  class="project-tile__image">
+                <a href="#" class="project__link">Wikipedia Viewer</a>
+            </div>
+    
+            <div class="project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project6"  class="project-tile__image">
+                <a href="#" class="project__link">Tic Tac Toe Game</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="contact">
+        <h1 class="contact__header">Let's work together...</h1>
+        <h4 class="contact__header-secondary">How do you take your coffee?</h4>
+        
+        <a href="#" id="profile-link" class="contact__header-link">
+            <span><svg class="contact__icon">
+                <use xlink:href="sprite.svg#icon-github"></use>
+                </svg>
+            </span> GitHub</a>
+    </section>
+
+    <footer id="footer">
+        <h4>**This is just a fake portfolio. All the projects and contact details given are not real.</h4>
+        <p>© Created for freeCodeCamp </p>
+    </footer>
+
+
+</body>
+</html>
